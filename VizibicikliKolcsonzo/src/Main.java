@@ -94,10 +94,8 @@ public class Main {
         for (Kolcsonzes k: kolcsonzesek)
             if (nev.equalsIgnoreCase(k.nev()))
                 System.out.println("\t\t"+k.EOra()+":"+k.EPerc()+"-"+k.VOra()+":"+k.VPerc());
-            else if (index++ == kolcsonzesek.size()-1){
+            else if (index++ == kolcsonzesek.size()-1)
                 System.out.println("\t\tNem volt ilyen nevű kölcsönző");
-                break;
-            }
     }
 
     private static void feladat5(List<Kolcsonzes> kolcsonzesek) {
